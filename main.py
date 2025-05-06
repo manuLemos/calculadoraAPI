@@ -47,13 +47,13 @@ def sqrt_numbers(request: OperationRequest2):
     return OperationResponse(result=result)
 
 @app.post("/exponencial", response_model=OperationResponse, summary="Exponencial", description="Calcula um número elevado a outro.")
-def sqrt_numbers(request: OperationRequest):
+def exponent_numbers(request: OperationRequest):
 
     result = exponent(request.a, request.b)
     return OperationResponse(result=result)
 
 @app.post("/factorial", response_model=OperationResponse, summary="Fatorial", description="Fatorial de um número.")
-def sqrt_numbers(request: OperationRequest2):
+def fact_numbers(request: OperationRequest2):
 
     result = factorial(request.a)
     return OperationResponse(result=result)
